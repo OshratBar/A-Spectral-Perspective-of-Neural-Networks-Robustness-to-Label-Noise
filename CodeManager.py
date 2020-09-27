@@ -145,7 +145,7 @@ if __name__ == "__main__":
     if args.do_sn        : regular_methods.append('sn')
     regular_method = '_'.join(regular_methods) if len(regular_methods) else 'no_reg'
 
-    outputs_dir = '/data/oshrat/final/' + args.dataset + '/' + args.noise_type +'/%s/'%(args.noise_rate) + regular_method + '/'
+    outputs_dir = '/data/' + args.dataset + '/' + args.noise_type +'/%s/'%(args.noise_rate) + regular_method + '/'
     
     print(outputs_dir)
 
