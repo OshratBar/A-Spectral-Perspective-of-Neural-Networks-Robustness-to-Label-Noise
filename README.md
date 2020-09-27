@@ -1,5 +1,5 @@
 # A-Spectral-Perspective-of-Neural-Networks-Robustness-to-Label-Noise 
-
+<pre>
 Train network (AllCNN / LeNet) with noisy datasets, using different regularization methods. <br/>
 Code creates the requiered dataset, trains the network for "repeat_num"  times, and saves run logs and results in a dedicated folder.<br/>
 
@@ -24,5 +24,5 @@ python CodeManager.py --noise_rate 0.4 --noise_type flip_noise    --dataset mnis
 python CodeManager.py --noise_rate 0.3 --noise_type uniform_noise --dataset cifar10  --wd_coef 1e-4 --do_sn --entropy_coef 1 --epochs_num 20 --GPU_num 1<br/>
 python CodeManager.py --noise_rate 0.5 --noise_type flip_noise    --dataset cifar100 --wd_coef 1e-4 --epochs_num 35 --GPU_num 2<br/>
 python CodeManager.py --noise_rate 0.7 --noise_type uniform_noise --dataset cifar10  --wd_coef 1e-5 --jacob_coef 1e-3 --GPU_num 3<br/>
-
+</pre>
 
