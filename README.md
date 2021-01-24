@@ -3,7 +3,7 @@
 Train network (AllCNN / LeNet) with noisy datasets, using different regularization methods. 
 Code creates the requiered dataset, trains the network for "repeat_num"  times, and saves run logs and results in a dedicated folder.
 
-Data
+**Data**
 
 parameter        |description                                 |type  |default       
  --------------- | ------------------------------------------ | ---- | --------------
@@ -14,7 +14,7 @@ validation_ratio |rate of validation data (out of train data) |float |0.1
 preprocess_mode  |range_0_to_1 or mean_substract              |str   |'range_0_to_1' 
 
 
-Train
+**Train**
 
 parameter        |description                                 |type  |default       
  --------------- | ------------------------------------------ | ---- | --------------
@@ -26,7 +26,7 @@ epochs_num    |number of epochs in each train run                         |int  
 total_repeats |number of train runs                                       |int   |5
 GPU_num       |number of GPU to use                                       |int   |0
 
-Examples
+**Examples**
 ```console
 python CodeManager.py --noise_rate 0.4 --noise_type flip_noise    --dataset mnist    --wd_coef 1e-4 --do_sn --GPU_num 0
 python CodeManager.py --noise_rate 0.3 --noise_type uniform_noise --dataset cifar10  --wd_coef 1e-4 --do_sn --entropy_coef 1 --epochs_num 20 --GPU_num 1
