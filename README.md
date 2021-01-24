@@ -9,7 +9,25 @@ noise_type:       uniform_noise or flip_noise                 (type=str,   defau
 noise_rate:       rate of corrupted samples                   (type=float, default=0.0)
 validation_ratio: rate of validation data (out of train data) (type=float, default=0.1)
 preprocess_mode:  range_0_to_1 or mean_substract              (type=str,   default='range_0_to_1')
-   
+
+parameter        |options                                     |type  |default       
+ --------------- | ------------------------------------------ | ---- | --------------
+dataset          |cifar10, cifar100 or mnist                  |str   |'cifar10'      
+noise_type       |uniform_noise or flip_noise                 |str   |'uniform_noise'
+noise_rate       |rate of corrupted samples                   |float |0.0            
+validation_ratio |rate of validation data (out of train data) |float |0.1             
+preprocess_mode  |range_0_to_1 or mean_substract              |str   |'range_0_to_1' 
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
+| Attempt | #1  | #2  |
+| :---:   | :-: | :-: |
+| Seconds | 301 | 283 |
+
 Train:
 do_sn:         whether or not to spectrally normalize the network weights
 wd_coef:       coefficient of L2 loss term       (type=float, default=0.0)
